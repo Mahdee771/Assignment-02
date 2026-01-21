@@ -79,7 +79,7 @@
     width: 100%;
     justify-content: center;
     justify-items: center;
-    background: url("/assets/hero-circle.png");
+    background: url("./assets/hero-circle.png");
     background-repeat: no-repeat;
     background-position-x: center;
 }
@@ -383,7 +383,7 @@
     height: 412px;
     max-width: 1600px;
     width: 100%;
-    background:  url('/assets/footer-bg.png');
+    background:  url('./assets/footer-bg.png');
     padding: 120px;
     display: flex;
     flex-direction: column;
