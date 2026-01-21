@@ -7,13 +7,16 @@
 }
 .navi{
     height: 92px;
+    width: 100%;
     max-width: 1600px;
     display: flex;
     flex-direction: row;
-    background-color: #412567;
+    background-color: #1A0B2E;
     justify-content: space-around;
     align-items: center;
+    border-bottom: #412567 solid 2.5px;
 }
+
 .navi ul{
     list-style: none;
     display: flex;
@@ -44,16 +47,27 @@
     display: none;
 }
 
-@media screen and (max-width:576px) {
-    .phoneMenu{
+@media screen and (max-width:440px) {
+     .phoneMenu{
+        max-width: 440px;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        background-color: #1A0B2E;
         justify-content: space-around;
-    }
-    
+        align-items: center;
+     }
+     nav a, nav ul, nav button,nav li, nav
+     {
+        display: none;
+     }
 }
 
 /* hero css */
 .heroSec{
     height: 760px;
+    width: 100%;
     max-width: 1600px;
     background: url('/assets/hero-bg.png');
     justify-items: center;
@@ -62,6 +76,7 @@
 .heromain{
     height: 558px;
     width: 550px;
+    width: 100%;
     justify-content: center;
     justify-items: center;
     background: url("/assets/hero-circle.png");
@@ -72,6 +87,7 @@
 .new{
     height: 38px;
     max-width: 75px;
+    width: 100%;
     font-weight: 600;
     font-size: 18px;
     background-color: #00FF88;
@@ -139,4 +155,119 @@
     align-items: center;
     gap: 8px; 
     align-items: center;
+}
+
+@media screen and (max-width:440px) {
+  
+}
+
+/* Second Section */
+.second{
+    background-color: #1A0B2E;
+    padding: 50px 200px 120px 200px;
+    color: white;
+    width: 100%;
+    max-width: 1600px;
+    height: 646px;
+}
+.secondContent{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.secondContent h1{
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.secondContent p{
+    font-size: 16px;
+    font-weight: 400;
+}
+.line{
+  width: 100%;
+  max-width: 1200px;
+  height: 1px;
+  margin: 80px auto;
+  background-color: rgba(255,255,255,0.2);
+}
+.cards{
+    display: flex;
+    gap: 80px;
+    justify-content: space-around;
+    
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+}
+.card p{
+    font-size: 16px;
+    font-weight: 400;
+}
+.card h1{
+    font-size: 48px;
+    font-weight: 900;
+    color: #00FF88;
+}
+
+/* Grid Section */
+.mobile{
+    grid-area: mobile;
+}
+.audio{
+    grid-area: audio;
+}
+.community{
+    grid-area: community;
+}
+.interview{
+    grid-area: interview;
+}
+.resource{
+    grid-area: resource;
+}
+.grid{
+    background-color: #230e3d;
+    width: 100%;
+    max-width: 1600px;
+    max-height: 1121px;
+    padding: 120px 200px;
+}
+.grid h1{
+    color: white;
+    font-size: 48px ;
+    font-weight: 700 ;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.grids{
+    max-width: 1200px;
+    height: 783px;
+    display: grid;
+    gap: 30px;
+    grid-template-areas:
+    " audio mobile mobile mobile"
+    " audio community community community"
+    " interview interview interview resource"
+    ;
+}
+.mobile, .audio, .community, .interview, .resource{
+    background-color: #351165;
+    border-radius: 40PX;
+    padding: 40px;
+    display: grid;
+    gap: 16px;
+}
+.mobile, .audio, .community, .interview, .resource h2{
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+}
+.mobile, .audio, .community, .interview, .resource p{
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
 }
