@@ -271,3 +271,110 @@
     font-size: 16px;
     font-weight: 400;
 }
+
+/* Third Section */
+.third{
+    width: 100%;
+    max-width: 1600px;
+    height: 1276px;
+    background-color: #1A0B2E;
+    padding: 120px 200px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+.upper{
+        color: white;
+}
+.upper h1{
+    text-align: center;
+    font-size:48px ;
+    font-family:800;
+    margin-bottom: 40px;
+}
+.video{
+    display: flex;
+    gap: 30px;
+}
+.vids{
+    max-width: 380px;
+    height: 440px;
+    background-color: #250D44;
+    border-radius: 30px;
+}
+.vids h2{
+    margin: 24px 24px 12px 24px;
+    font-size: 24px;
+    font-weight: 700;
+}
+.vids p{
+    margin: 12px 24px 12px 24px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.time{
+    margin: 12px 24px 12px 24px;
+    display: flex;
+    gap: 6px;
+}
+.time p{
+    margin: 0px;
+}
+
+.lower{
+        color: white;
+        background-color: #35116569;
+        padding: 40px;
+        border-radius: 40px;
+}
+.lower h1{
+    text-align: center;
+    font-size:48px ;
+    font-family:800;
+    margin-bottom: 40px;
+}
+.host{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.hostInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.hostInfo h2{
+    font-size: 32px;
+    font-weight: 700;
+}
+.hostInfo p{
+    font-size: 16px;
+    font-weight: 400;
+}
+.image{
+    display: flex;
+    gap: 8px; 
+}
+.image a{
+  width: 40px;            
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #533C72;
+  display: grid;
+  place-items: center;
+}
+.image a img{
+  width: 20px;
+  height: 20px;
+  display: block;
+  border: none;
+  padding: 0;
+  border-radius: 0;
+}
+.hostInfo img{
+    border: 1px solid #533C72 ;
+    border-radius: 20px ;
+    padding: 5px;
+}
+
