@@ -69,7 +69,7 @@
     height: 760px;
     width: 100%;
     max-width: 1600px;
-    background: url('/assets/hero-bg.png');
+    background: url('../assets/hero-bg.png');
     justify-items: center;
     padding: 101px 525px;
 }
@@ -79,7 +79,7 @@
     width: 100%;
     justify-content: center;
     justify-items: center;
-    background: url("./assets/hero-circle.png");
+    background: url("../assets/hero-circle.png");
     background-repeat: no-repeat;
     background-position-x: center;
 }
@@ -383,7 +383,7 @@
     height: 412px;
     max-width: 1600px;
     width: 100%;
-    background:  url('./assets/footer-bg.png');
+    background:  url('../assets/footer-bg.png');
     padding: 120px;
     display: flex;
     flex-direction: column;
@@ -413,187 +413,3 @@
   display: flex;
   justify-content: center;
 }
-
-/* Responsive for <= 400px */
-@media screen and (max-width: 400px) {
-
-  /* Phone nav */
-  .phoneMenu{
-    width: 100%;
-    height: 60px;
-    padding: 0 16px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  nav, nav ul, nav li, nav a, nav button, .navi{
-    display: none;
-  }
-
-  /* HERO */
-  .heroSec{
-    height: auto;
-    padding: 64px 16px;
-    background-size: cover;
-    background-position: center;
-  }
-
-  .heromain{
-    height: auto;
-    width: 100%;
-    padding: 0;
-    background-position: center;
-    background-size: 320px auto;
-  }
-
-  .new{
-    margin: 0 0 16px 0;
-    height: auto;
-    max-width: none;
-    width: auto;
-    display: inline-block;
-  }
-
-  .mic{
-    margin-bottom: 24px;
-  }
-
-  .heroContent h1{
-    font-size: 36px;
-    line-height: 1.1;
-    text-align: center;
-  }
-
-  .heroContent p{
-    text-align: center;
-    padding: 0 6px;
-  }
-
-  .heroButton{
-    width: 100%;
-    flex-direction: column;
-    gap: 12px;
-    align-items: stretch;
-  }
-
-  .buttonA,
-  .buttonB{
-    width: 100%;
-  }
-
-  /* SECOND SECTION */
-  .second{
-    height: auto;
-    padding: 56px 16px 80px 16px;
-  }
-
-  .secondContent h1{
-    font-size: 32px;
-  }
-
-  .line{
-    margin: 40px auto;
-  }
-
-  .cards{
-    flex-direction: column;
-    gap: 24px;
-    align-items: center;
-  }
-
-  .card h1{
-    font-size: 36px;
-  }
-
-  /* GRID SECTION */
-  .grid{
-    padding: 64px 16px;
-    max-height: none;
-  }
-
-  .grid h1{
-    font-size: 32px;
-  }
-
-  .grids{
-    height: auto;
-    grid-template-areas:
-      "audio"
-      "mobile"
-      "community"
-      "interview"
-      "resource";
-    grid-template-columns: 1fr;
-    gap: 16px;
-  }
-
-  .mobile, .audio, .community, .interview, .resource{
-    padding: 20px;
-    border-radius: 24px;
-  }
-
-  /* THIRD SECTION */
-  .third{
-    height: auto;
-    padding: 64px 16px;
-    gap: 64px;
-  }
-
-  .upper h1,
-  .lower h1{
-    font-size: 32px;
-    margin-bottom: 24px;
-  }
-
-  .video{
-    flex-direction: column;
-    gap: 16px;
-  }
-
-  .vids{
-    max-width: 100%;
-    height: auto;
-  }
-
-  .vids img{
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 30px 30px 0 0;
-  }
-
-  .lower{
-    padding: 24px;
-    border-radius: 24px;
-  }
-
-  .host{
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
-  }
-
-  .hostInfo h2{
-    font-size: 24px;
-  }
-
-  .image{
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-
-  /* FOOTER */
-  .foot{
-    height: auto;
-    padding: 64px 16px;
-    background-size: cover;
-    background-position: center;
-  }
-
-  .socials{
-    flex-direction: column;
-    gap: 16px;
-  }
-}
-
