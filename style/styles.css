@@ -47,22 +47,23 @@
     display: none;
 }
 
-@media screen and (max-width:440px) {
-     .phoneMenu{
-        max-width: 440px;
-        width: 100%;
-        height: 60px;
-        display: flex;
-        flex-direction: row;
-        background-color: #1A0B2E;
-        justify-content: space-around;
-        align-items: center;
-     }
-     nav a, nav ul, nav button,nav li, nav
-     {
-        display: none;
-     }
+@media screen and (max-width:576px) {
+
+  .phoneMenu{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    background-color: #1A0B2E;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  nav{
+    display: none;
+  }
 }
+
 
 /* hero css */
 .heroSec{
@@ -276,12 +277,14 @@
     display: grid;
     gap: 16px;
 }
-.mobile, .audio, .community, .interview, .resource h2{
-    color: white;
-    font-size: 24px;
-    font-weight: 700;
+.mobile h2, .audio h2, .community h2, .interview h2, .resource h2{
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
 }
-.mobile, .audio, .community, .interview, .resource p{
+
+
+.mobile p, .audio p, .community p, .interview p, .resource p{
     color: white;
     font-size: 16px;
     font-weight: 400;
@@ -427,4 +430,284 @@
 .footlogo{
   display: flex;
   justify-content: center;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:576px){
+
+  /* keep sections centered and avoid overflow */
+  .heroSec, .second, .grid, .third, .foot{
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* HERO */
+  .heroSec{
+    height: auto;
+    padding: 80px 16px 90px 16px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .heromain{
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 420px;
+  }
+
+  .mic{
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+  }
+  .mic img{
+    width: 260px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* New badge should not use huge margins on mobile */
+  .new{
+    margin: 0 auto 18px auto;
+  }
+
+  .heroContent h1{
+    font-size: 44px;
+    text-align: center;
+  }
+  .heroContent p{
+    text-align: center;
+    max-width: 340px;
+  }
+
+  .heroButton{
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+  }
+  .buttonA, .buttonB{
+    width: 100%;
+    max-width: 320px;
+    justify-content: center;
+  }
+
+  /* ABOUT */
+  .second{
+    height: auto;
+    padding: 70px 16px 80px 16px;
+  }
+
+  .secondContent h1{
+    font-size: 34px;
+  }
+
+  .line{
+    margin: 40px auto;
+  }
+
+  /* stats become 2 columns like Figma small */
+  .cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+    justify-items: center;
+  }
+
+  /* WHY CHOOSE (stack cards) */
+  .grid{
+    max-height: none;
+    padding: 80px 16px;
+  }
+  .grid h1{
+    font-size: 34px;
+  }
+
+  .grids{
+    height: auto;
+    max-width: 100%;
+    grid-template-areas: none;
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .mobile, .audio, .community, .interview, .resource{
+    padding: 26px;
+    border-radius: 28px;
+  }
+
+  /* EPISODES */
+  .third{
+    height: auto;
+    padding: 80px 16px;
+    gap: 80px;
+  }
+  .upper h1, .lower h1{
+    font-size: 34px;
+  }
+
+  .video{
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .vids{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+
+  .vids img{
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* HOST */
+  .lower{
+    padding: 28px;
+    border-radius: 28px;
+  }
+
+  .host{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .host img{
+    width: 260px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .image{
+    justify-content: center;
+  }
+
+  /* FOOTER */
+  .foot{
+    height: auto;
+    padding: 80px 16px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .socials{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px 24px;
+  }
+}
+
+
+
+@media screen and (min-width:577px) and (max-width:992px){
+
+  .heroSec, .second, .grid, .third, .foot{
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .heroSec{
+    height: auto;
+    padding: 90px 40px 100px 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .heromain{
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 520px;
+  }
+
+  .new{
+    margin: 0 auto 20px auto;
+  }
+
+  .mic{
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .heroContent h1{
+    font-size: 54px;
+    text-align: center;
+  }
+
+  .heroContent p{
+    text-align: center;
+    max-width: 520px;
+  }
+
+  .second{
+    height: auto;
+    padding: 80px 40px 100px 40px;
+  }
+
+  .cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px 40px;
+    justify-items: center;
+  }
+
+  .grid{
+    max-height: none;
+    padding: 100px 40px;
+  }
+
+  .grids{
+    height: auto;
+    grid-template-areas: none;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+  }
+
+  .third{
+    height: auto;
+    padding: 100px 40px;
+    gap: 90px;
+  }
+
+  .video{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 22px;
+  }
+
+  .vids{
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .host{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image{
+    justify-content: center;
+  }
+
+  .foot{
+    height: auto;
+    padding: 100px 40px;
+  }
 }
